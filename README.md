@@ -1,2 +1,4 @@
 # Git-Game-17I260A
-Learning Git
+
+Learning Git by making game.
+
