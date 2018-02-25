@@ -2,5 +2,9 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 
-void printScreen(std::string text, std::string options);
+string printQuestion(std::string text, std::string options);
+
+void printPause(string text);
+

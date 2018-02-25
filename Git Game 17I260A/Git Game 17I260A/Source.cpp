@@ -1,15 +1,16 @@
 #include <iostream>
 #include <string>
 #include "screen.h"
+#include "Player.h"
 
 using namespace std;
 
 void main() {
 
-	
+	Player player;
 
 
-	printScreen("test jotain \njotain muuta","1) Jotain\n2) Jotain");
+	player.printStats();
 
 
 	cout << endl;
