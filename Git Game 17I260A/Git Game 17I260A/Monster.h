@@ -1,22 +1,13 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "screen.h"
 
 using namespace std;
 
-class Player
+class Monster
 {
 public:
-	Player();
-
-	void giveName(string name);
-	string getName();
-	void giveSex(string sex);
-	string getSex();
-
-	string setClass(string playerClass);   // warrior, mage, roggue
-	string getClass();
+	Monster();
 
 	int addHealth(int toHealth);
 	int recudeHealth(int fromHealth);
@@ -36,20 +27,16 @@ public:
 	int setIntelligency(int intelligency);
 	int getIntelligency();
 
-	
-
-	void printStats();
 
 
-	~Player();
-	
+
+
+	~Monster ();
+
 
 
 
 private:
-	string name;
-	string sex;
-	string playerClass;
 
 	int health;
 	int maxHealth;
