@@ -15,6 +15,9 @@ public:
 	void giveSex(string sex);
 	string getSex();
 
+	string setClass(string playerClass);   // warrior, mage, roggue
+	string getClass();
+
 	int addHealth(int toHealth);
 	int recudeHealth(int fromHealth);
 	int setHealth(int health);
@@ -33,6 +36,8 @@ public:
 	int setIntelligency(int intelligency);
 	int getIntelligency();
 
+	
+
 	void printStats();
 
 
@@ -44,6 +49,7 @@ public:
 private:
 	string name;
 	string sex;
+	string playerClass;
 
 	int health;
 	int maxHealth;

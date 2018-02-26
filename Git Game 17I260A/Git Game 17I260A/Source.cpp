@@ -10,8 +10,6 @@ void main() {
 	Player player;
 
 
-	player.printStats();
-
 
 	cout << endl;
 	system("pause");
