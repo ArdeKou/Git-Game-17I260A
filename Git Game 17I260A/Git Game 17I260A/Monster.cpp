@@ -11,7 +11,7 @@ int Monster::addHealth(int toHealth)
 	return this->health;
 }
 
-int Monster::recudeHealth(int fromHealth)
+int Monster::reduceHealth(int fromHealth)
 {
 	this->health -= fromHealth;
 	return this->health;
@@ -39,15 +39,15 @@ int Monster::getMaxHealth()
 	return this->maxHealth;
 }
 
-int Monster::setStrenght(int strenght)
+int Monster::setStrength(int strength)
 {
-	this->strenght = strenght;
-	return this->strenght;
+	this->strength = strength;
+	return this->strength;
 }
 
-int Monster::getStrenght()
+int Monster::getStrength()
 {
-	return this->strenght;
+	return this->strength;
 }
 
 int Monster::setAgility(int agility)
@@ -61,15 +61,15 @@ int Monster::getAgility()
 	return this->agility;
 }
 
-int Monster::setIntelligency(int intelligency)
+int Monster::setIntelligence(int intelligence)
 {
-	this->intelligency = intelligency;
-	return this->intelligency;
+	this->intelligence = intelligence;
+	return this->intelligence;
 }
 
-int Monster::getIntelligency()
+int Monster::getIntelligence()
 {
-	return this->intelligency;
+	return this->intelligence;
 }
 Monster::~Monster()
 {

@@ -30,28 +30,28 @@ Player::Player()
 			switch (storageInt) {
 			case 1:
 				setClass("warrior");
-				setStrenght(20);
+				setStrength(20);
 				setAgility(15);
-				setIntelligency(10);
+				setIntelligence(10);
 
 				storageBool = false;
 				break;
 			case 2:
 				setClass("mage");
-				setStrenght(10);
+				setStrength(10);
 				setAgility(15);
-				setIntelligency(20);
+				setIntelligence(20);
 				storageBool = false;
 				break;
 			case 3:
 				setClass("rogue");
-				setStrenght(15);
+				setStrength(15);
 				setAgility(20);
-				setIntelligency(10);
+				setIntelligence(10);
 				storageBool = false;
 				break;
 			default:
-				printPause("That was invalid choice, try again!");
+				printPause("That was an invalid choice, try again!");
 				break;
 
 
@@ -62,7 +62,7 @@ Player::Player()
 		storageBool = true;
 		while (storageBool) {
 			printStats();
-			storageInt = stoi(printQuestion("Were you satisfied with your character?", "1) Yes\n2) No, lets start from begining!\n3) Show again"));
+			storageInt = stoi(printQuestion("Were you satisfied with your character?", "1) Yes\n2) No, lets start from beginning!\n3) Show again"));
 			switch (storageInt) {
 			case 1:
 				characterReady = true;
@@ -77,7 +77,7 @@ Player::Player()
 			case 3:
 				break;
 			default:
-				printPause("That was invalid choice, try again!");
+				printPause("That was an invalid choice, try again!");
 				break;
 
 
@@ -124,7 +124,7 @@ int Player::addHealth(int toHealth)
 	return this->health;
 }
 
-int Player::recudeHealth(int fromHealth)
+int Player::reduceHealth(int fromHealth)
 {
 	this->health -= fromHealth;
 	return this->health;
@@ -152,15 +152,15 @@ int Player::getMaxHealth()
 	return this->maxHealth;
 }
 
-int Player::setStrenght(int strenght)
+int Player::setStrength(int strenght)
 {
-	this->strenght = strenght;
-	return this->strenght;
+	this->strength = strength;
+	return this->strength;
 }
 
-int Player::getStrenght()
+int Player::getStrength()
 {
-	return this->strenght;
+	return this->strength;
 }
 
 int Player::setAgility(int agility)
@@ -174,15 +174,15 @@ int Player::getAgility()
 	return this->agility;
 }
 
-int Player::setIntelligency(int intelligency)
+int Player::setIntelligence(int intelligence)
 {
-	this->intelligency = intelligency;
-	return this->intelligency;
+	this->intelligence = intelligence;
+	return this->intelligence;
 }
 
-int Player::getIntelligency()
+int Player::getIntelligence()
 {
-	return this->intelligency;
+	return this->intelligence;
 }
 
 void Player::printStats()
@@ -193,9 +193,9 @@ void Player::printStats()
 	storageString += "Sex: " + getSex() + "\n";
 	storageString += "Class: " + getClass() + "\n";
 	storageString += "\n";
-	storageString += "Strenght: " + to_string(getStrenght()) + "\n";
+	storageString += "Strenght: " + to_string(getStrength()) + "\n";
 	storageString += "Agility: " + to_string(getAgility()) + "\n";
-	storageString += "Intelligency: " + to_string(getIntelligency()) + "\n";
+	storageString += "Intelligency: " + to_string(getIntelligence()) + "\n";
 
 	printPause(storageString);
 	system("cls");

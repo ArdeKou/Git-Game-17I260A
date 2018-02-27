@@ -10,7 +10,7 @@ public:
 	Monster();
 
 	int addHealth(int toHealth);
-	int recudeHealth(int fromHealth);
+	int reduceHealth(int fromHealth);
 	int setHealth(int health);
 	int getHealth();
 
@@ -18,14 +18,14 @@ public:
 	int getMaxHealth();
 
 
-	int setStrenght(int strenght);
-	int getStrenght();
+	int setStrength(int strength);
+	int getStrength();
 
 	int setAgility(int agility);
 	int getAgility();
 
-	int setIntelligency(int intelligency);
-	int getIntelligency();
+	int setIntelligence(int intelligence);
+	int getIntelligence();
 
 
 
@@ -41,9 +41,9 @@ private:
 	int health;
 	int maxHealth;
 
-	int strenght;
+	int strength;
 	int agility;
-	int intelligency;
+	int intelligence;
 
 
 };
